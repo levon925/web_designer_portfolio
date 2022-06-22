@@ -82,7 +82,7 @@ function changeText() {
         aston.textContent = 'Aston Martin is the iconic British sport car brand \r\nthat has stood for beautiful, hand-crafted cars that \r\nare exhilarating to drive since 1913. This project is \r\na redesign of official Aston Martin website. ';
         skyNews.textContent = "Sky News is a British free-to-air television news \r\nchannel and organisation which started \r\nbroadcasting since February 1989, becoming the \r\nUK's first round-the-clock news channel. ";
         goldory.textContent = 'Goldory is a website concept made for a real \r\nestate company based in Moscow. The Goldory \r\nLuxury House has bright and spacious rooms, \r\nhight ceilings and geometric facade elements.';
-        headerIcons.innerHTML= "<img class='social' src='img/header/behance.svg' alt='behance'><img class='social_down' src='img/header/instagram.svg' alt='instagram'><img class='social' src='/img/header/facebook.svg' alt='facebook'>";
+        headerIcons.innerHTML= "<img class='social' src='img/header/behance.svg' alt='behance'><img class='social_down' src='img/header/instagram.svg' alt='instagram'><img class='social' src='img/header/facebook.svg' alt='facebook'>";
         concept.textContent = "first concept ";
         imageChange(1000);
  
@@ -102,7 +102,7 @@ function changeText() {
         aston.textContent ="This project is a redesign of official Aston \r\nMartin website. The main goal was to \r\nimprove UI and UX parts bringing Aston \r\nMartin spirit.";
         skyNews.textContent ="Sky News is a British free-to-air television \r\nnews channel and organisation which \r\nstarted broadcasting since February 1989, \r\nbecoming the UK's first round-the-clock \r\nnews channel. ";
         goldory.textContent ="Goldory is a website concept made for a \r\nreal estate company. The Goldory Luxury \r\nHouse has bright and spacious rooms, \r\nhight ceilings and geometric facade \r\nelements.";
-        headerIcons.innerHTML= "<img class='social' src='img/header/behance.svg' alt='behance'><img class='social_down' src='img/header/instagram.svg' alt='instagram'><img class='social' src='/img/header/facebook.svg' alt='facebook'>";
+        headerIcons.innerHTML= "<img class='social' src='img/header/behance.svg' alt='behance'><img class='social_down' src='img/header/instagram.svg' alt='instagram'><img class='social' src='img/header/facebook.svg' alt='facebook'>";
         concept.textContent = "first concept ";
     } else if(width < 623 && width >= 0) {
         
