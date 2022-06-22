@@ -14,7 +14,7 @@
     <script src="js/mailer.js" defer></script>
 </head>
 <body>
-    <div class="fixed_overlay dn fixed_overlay_modal">
+    <!-- <div class="fixed_overlay dn fixed_overlay_modal">
         <div class="modal_close_background"></div>
         <div class="modal">
             <img class="modal_close cursor_pointer" src="img/modal_close.svg" alt="">
@@ -34,7 +34,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
     <header>
         <p class="header_title cursor_pointer">
            <a class="cursor_pointer element-animation" href="/">LANA TOPCHYAN</a> 
@@ -49,7 +49,7 @@
         <div class="cover">
             <p class="cover_title element-animation">web designer</p>
             <div class="cover_photo">
-                <img class="cover_img element-animation" src="img/1000/lana_1.svg" alt="">
+                <img class="cover_img element-animation" src="img/lana/Lana_1.png" alt="">
             </div>
         </div>
         <div class="about">
@@ -73,7 +73,7 @@
                             <p class="step_number">01</p>
                             <p>briefing</p>
                         </div>
-                        <img class="cursor_pointer" src="img/steps/plus.svg" alt="">
+                        <img class="cursor_pointer plus" src="img/steps/plus.svg" alt="">
                         <img src="img/steps/minus.svg" alt="" class="dn cursor_pointer">
                     </div>
                     
@@ -87,7 +87,7 @@
                             <p class="step_number">02</p>
                             <p>analytics</p>
                         </div>
-                        <img class="cursor_pointer" src="img/steps/plus.svg" alt="">
+                        <img class="cursor_pointer plus" src="img/steps/plus.svg" alt="">
                         <img src="img/steps/minus.svg" alt="" class="dn cursor_pointer">
                     </div>
                     <p class="step_description dn">
@@ -100,7 +100,7 @@
                             <p class="step_number">03</p>
                             <p>prototyping</p>
                         </div>
-                        <img class="cursor_pointer" src="img/steps/plus.svg" alt="">
+                        <img class="cursor_pointer plus" src="img/steps/plus.svg" alt="">
                         <img src="img/steps/minus.svg" alt="" class="dn cursor_pointer">
                     </div>
                     <p class="step_description dn">
@@ -114,7 +114,7 @@
                             <p class="step_number">04</p>
                             <p class="concept"> first concept</p>
                         </div>
-                        <img class="cursor_pointer" src="img/steps/plus.svg" alt="">
+                        <img class="cursor_pointer plus" src="img/steps/plus.svg" alt="">
                         <img src="img/steps/minus.svg" alt="" class="dn cursor_pointer">
                     </div>
                     <p class="step_description dn">
@@ -130,7 +130,7 @@ fonts and styles.
                             <p class="step_number">05</p>
                             <p>design</p>
                         </div>
-                        <img class="cursor_pointer" src="img/steps/plus.svg" alt="">
+                        <img class="cursor_pointer plus" src="img/steps/plus.svg" alt="">
                         <img src="img/steps/minus.svg" alt="" class="dn cursor_pointer">
                     </div>
                     <p class="step_description dn">
@@ -144,7 +144,7 @@ fonts and styles.
                             <p class="step_number">06</p>
                             <p>final</p>
                         </div>
-                        <img class="cursor_pointer" src="img/steps/plus.svg" alt="">
+                        <img class="cursor_pointer plus" src="img/steps/plus.svg" alt="">
                         <img src="img/steps/minus.svg" alt="" class="dn cursor_pointer">
                     </div>
                     <p class="step_description dn">
@@ -170,7 +170,7 @@ a figma file, including sources and adaptive.
                                 <div class="project_info">
                                     <div class="project_title mura_title element-animation">
                                         <p>mura boutique</p>
-                                        <img src="img/projects/arrow.svg" alt="">
+                                        <img src="img/projects/arrow.svg" class="arrow" alt="">
                                     </div>
                                     <span class="mura_description element-animation">
                                         This project is a redesign of Mura boutique website. 
@@ -287,13 +287,36 @@ a figma file, including sources and adaptive.
         <div class="services">
             <p class="services_title element-animation">services and cost</p>
             <div class="service_list">
+
+                <div class="fixed_overlay dn fixed_overlay_modal">
+                    <div class="modal_close_background"></div>
+                    <div class="modal">
+                        <img class="modal_close cursor_pointer" src="img/modal_close.svg" alt="">
+                        <div class="modal_content">
+                            <p class="modal_title">Leave a request for a <span class="modal_title modal_website_type">landing page</span></p>
+                            <p class="modal_description">
+                                <span>A landing page is a page on your site that is designed to convert visitors into leads. Used to enhance the effectiveness of advertising, increase the audience.</span> <br><br>
+                                If you have any <span class="modal_website_type">landing page</span> project, please contact me by filling out this form.
+                            </p>
+                            <form class="modal_form" action="sumbit">
+                                <div class="modal_input_group">
+                                    <input class="modal_input modal_mandatory modal_name" placeholder="Name*" type="text" name="Name" id="from_name">
+                                    <input class="modal_input modal_mandatory modal_email" placeholder="Email*" type="email" name="E-mail" id="to_name">
+                                </div>
+                                <textarea class="modal_input modal_message" placeholder="Your message" type="text" name="Message" id="message"></textarea>
+                                <input class="modal_button" type="submit" id="button" value="SEND A REQUEST">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="service element-animation">
                     <p class="service_title">landing pages</p>
                     <div class="service_description">
                         <span class="service_price">from $200</span>
                         <div class="about_service_button landing_page cursor_pointer">
                             <span class="about_service_link cursor_pointer">leave a request</span>
-                            <img class="cursor_pointer" src="img/service/arrow.svg" alt="">
+                            <img class="cursor_pointer arrow" src="img/service/arrow.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -303,7 +326,7 @@ a figma file, including sources and adaptive.
                         <span class="service_price">from $400</span>
                         <div class="about_service_button online_store cursor_pointer">
                             <span class="about_service_link cursor_pointer">leave a request</span>
-                            <img class="cursor_pointer" src="img/service/arrow.svg" alt="">
+                            <img class="cursor_pointer arrow" src="img/service/arrow.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -313,7 +336,7 @@ a figma file, including sources and adaptive.
                         <span class="service_price">from $500</span>
                         <div class="about_service_button corporate_website cursor_pointer">
                             <span class="about_service_link cursor_pointer">leave a request</span>
-                            <img class="cursor_pointer" src="img/service/arrow.svg" alt="">
+                            <img class="cursor_pointer arrow" src="img/service/arrow.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -323,7 +346,7 @@ a figma file, including sources and adaptive.
                         <span class="service_price">from $400</span>
                         <div class="about_service_button agency_portfolio cursor_pointer">
                             <span class="about_service_link cursor_pointer">leave a request</span>
-                            <img class="cursor_pointer" src="img/service/arrow.svg" alt="">
+                            <img class="cursor_pointer arrow" src="img/service/arrow.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -333,7 +356,7 @@ a figma file, including sources and adaptive.
                         <span class="service_price">from $500</span>
                         <div class="about_service_button news_website cursor_pointer">
                             <span class="about_service_link cursor_pointer">leave a request</span>
-                            <img class="cursor_pointer" src="img/service/arrow.svg" alt="">
+                            <img class="cursor_pointer arrow" src="img/service/arrow.svg" alt="">
                         </div>
                     </div>
                 </div>
