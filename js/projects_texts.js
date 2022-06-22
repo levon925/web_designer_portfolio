@@ -110,18 +110,18 @@ function changeText() {
         removeProjectButtons();
         const projects = [`<div class="project">
         <div class="project_content">
-            <div class="project_buttons">
+            <div class="project_buttons element-animation">
                 <div class="project_button">online store</div>
                 <div class="project_button project_hide">fashion</div>
                 <div class="project_button">redesign</div>
             </div>
-            <img class="project_image mura_image" src="img/projects/320/mura.png" alt="">
+            <img class="project_image mura_image element-animation" src="img/projects/320/mura.png" alt="">
             <div class="project_info">
-                <div class="project_title mura_title cursor_pointer">
+                <div class="project_title mura_title cursor_pointer element-animation">
                     <p class="cursor_pointer">mura boutique</p>
                     <img class="cursor_pointer" src="img/projects/arrow.svg" alt="">
                 </div>
-                <span class="mura_description">
+                <span class="mura_description element-animation">
                     This project is a redesign of Mura boutique website. 
                     <br> Mura is a female fashion boutique that started in 2011 by founder Asako Nakamura in Noosa, Australia. Mura offers beautiful clothing, shoes and accessories.
                 </span>
@@ -130,18 +130,18 @@ function changeText() {
     </div>`,
 ` <div class="project">
 <div class="project_content">
-    <div class="project_buttons">
+    <div class="project_buttons element-animation">
         <div class="project_button">corporate</div>
         <div class="project_button project_hide">food</div>
         <div class="project_button">redesign</div>
     </div>
-    <img class="project_image nestle_image" src="img/projects/320/nestle.png" alt="">
+    <img class="project_image nestle_image element-animation" src="img/projects/320/nestle.png" alt="">
     <div class="project_info">
-        <div class="project_title nestle_title cursor_pointer">
+        <div class="project_title nestle_title cursor_pointer element-animation">
             <p class="cursor_pointer">Nestlé website</p>
             <img class="cursor_pointer" src="img/projects/arrow.svg" alt="">
         </div>
-        <span class="nestle_description">
+        <span class="nestle_description element-animation">
             Nestlé is a Swiss multinational food and drink processing conglomerate corporation. Nestlé's products include baby food, medical food, bottled water, breakfast cereals, coffee and tea, confectionery, dairy products, ice cream, frozen food, pet foods, and snacks.
         </span>
     </div>
@@ -149,18 +149,18 @@ function changeText() {
 </div>`,
 `<div class="project">
 <div class="project_content">
-    <div class="project_buttons">
+    <div class="project_buttons element-animation">
         <div class="project_button">online store</div>
         <div class="project_button">cosmetics</div>
         <div class="project_button project_hide">redesign</div>
     </div>
-    <img class="project_image eltrendy_image" src="img/projects/320/eltrendy.png" alt="">
+    <img class="project_image eltrendy_image element-animation" src="img/projects/320/eltrendy.png" alt="">
     <div class="project_info">
-        <div class="project_title eltrendy_title cursor_pointer">
+        <div class="project_title eltrendy_title cursor_pointer element-animation">
             <p class="cursor_pointer">eltrendy store</p>
             <img class="cursor_pointer" src="img/projects/arrow.svg" alt="">
         </div>
-        <span class="eltrendy_description">
+        <span class="eltrendy_description element-animation">
             ElTrendy.store is an online store that contains the most popular brands <br>for harmony and beauty. ElTrendy is one of the top 10 most famous <br>studios in Russia.
         </span>
     </div>
@@ -168,18 +168,18 @@ function changeText() {
 </div>`,
 `<div class="project">
 <div class="project_content">
-    <div class="project_buttons">
+    <div class="project_buttons element-animation">
         <div class="project_button">corporate</div>
         <div class="project_button project_hide">ui</div>
         <div class="project_button">redesign</div>
     </div>
-    <img class="project_image aston_image" src="img/projects/320/aston.png" alt="">
+    <img class="project_image aston_image element-animation" src="img/projects/320/aston.png" alt="">
     <div class="project_info">
-        <div class="project_title aston_title cursor_pointer">
+        <div class="project_title aston_title cursor_pointer element-animation">
             <p class="cursor_pointer">aston martin</p>
             <img class="cursor_pointer" src="img/projects/arrow.svg" alt="">
         </div>
-        <span class="aston_description">
+        <span class="aston_description element-animation">
             Aston Martin is the iconic British sport car brand that has stood for beautiful, hand-crafted cars that are exhilarating to drive since 1913. This project is a redesign of official Aston Martin website. The main goal was to improve UI and UX parts bringing Aston Martin spirit.
         </span>
     </div>
@@ -187,18 +187,18 @@ function changeText() {
 </div>`,
 `<div class="project">
 <div class="project_content">
-    <div class="project_buttons">
+    <div class="project_buttons element-animation">
         <div class="project_button">news website</div>
         <div class="project_button">ui/ux</div>
         <div class="project_button project_hide">redesign</div>
     </div>
-    <img class="project_image sky_news_image" src="img/projects/320/sky_news.png" alt="">
+    <img class="project_image sky_news_image element-animation" src="img/projects/320/sky_news.png" alt="">
     <div class="project_info">
-        <div class="project_title sky_title cursor_pointer">
+        <div class="project_title sky_title cursor_pointer element-animation">
             <p class="cursor_pointer">sky news</p>
             <img class="cursor_pointer" src="img/projects/arrow.svg" alt="">
         </div>
-        <span class="sky_news_description">
+        <span class="sky_news_description element-animation">
             Sky News is a British free-to-air television news channel and organisation which started broadcasting since February 1989, becoming the UK's first round-the-clock news channel. The audience is estimated at 150 million people worldwide.
         </span>
     </div>
@@ -206,18 +206,18 @@ function changeText() {
 </div>`,
 `<div class="project">
 <div class="project_content">
-    <div class="project_buttons">
+    <div class="project_buttons element-animation">
         <div class="project_button">landing page</div>
         <div class="project_button">real estate</div>
         <div class="project_button project_hide">concept</div>
     </div>
-    <img class="project_image goldory_image" src="img/projects/320/goldory.png" alt="">
+    <img class="project_image goldory_image element-animation" src="img/projects/320/goldory.png" alt="">
     <div class="project_info">
-        <div class="project_title goldory_title cursor_pointer">
+        <div class="project_title goldory_title cursor_pointer element-animation">
             <p class="cursor_pointer">goldory</p>
             <img class="cursor_pointer" src="img/projects/arrow.svg" alt="">
         </div>
-        <span class="goldory_description">
+        <span class="goldory_description element-animation">
             Goldory is a website concept made for a real estate company based in Moscow. The Goldory Luxury House has bright and spacious rooms, hight ceilings and geometric facade elements.
         </span>
     </div>
@@ -337,22 +337,22 @@ function resetProjectList(){
     socialHeaderButtons();
     
     projectList.innerHTML = `<div class="projects_col">
-    <p class="projects_title">selected projects</p>
+    <p class="projects_title element-animation">selected projects</p>
     <div class="projects_column">
         <div class="project">
             <div class="project_content">
-                <div class="project_buttons">
+                <div class="project_buttons element-animation">
                     <div class="project_button">online store</div>
                     <div class="project_button project_hide">fashion</div>
                     <div class="project_button">redesign</div>
                 </div>
-                <img class="project_image mura_image" src="img/projects/1000/mura.png" alt="">
+                <img class="project_image mura_image element-animation" src="img/projects/1000/mura.png" alt="">
                 <div class="project_info">
-                    <div class="project_title mura_title cursor_pointer">
+                    <div class="project_title mura_title cursor_pointer element-animation">
                         <p class="cursor_pointer">mura boutique</p>
                         <img class="cursor_pointer" src="img/projects/arrow.svg" alt="">
                     </div>
-                    <span class="mura_description">
+                    <span class="mura_description element-animation">
                     This project is a redesign of Mura boutique website. 
                     <br> Mura is a female fashion boutique that started in 2011 by founder Asako Nakamura in Noosa, Australia. Mura offers beautiful clothing, shoes and accessories.
                     </span>
@@ -361,18 +361,18 @@ function resetProjectList(){
         </div>
         <div class="project">
             <div class="project_content">
-                <div class="project_buttons">
+                <div class="project_buttons element-animation">
                     <div class="project_button">corporate</div>
                     <div class="project_button project_hide">food</div>
                     <div class="project_button">redesign</div>
                 </div>
-                <img class="project_image nestle_image" src="img/projects/1000/nestle.png" alt="">
+                <img class="project_image nestle_image element-animation" src="img/projects/1000/nestle.png" alt="">
                 <div class="project_info">
-                    <div class="project_title nestle_title cursor_pointer">
+                    <div class="project_title nestle_title cursor_pointer element-animation">
                         <p class="cursor_pointer">Nestlé website</p>
                         <img class="cursor_pointer" src="img/projects/arrow.svg" alt="">
                     </div>
-                    <span class="nestle_description">
+                    <span class="nestle_description element-animation">
                         Nestlé is a Swiss multinational food and drink processing conglomerate corporation. Nestlé's products include baby food, medical food, bottled water, breakfast cereals, coffee and tea, confectionery, dairy products, ice cream, frozen food, pet foods, and snacks.
                     </span>
                 </div>
@@ -380,18 +380,18 @@ function resetProjectList(){
         </div>
         <div class="project">
             <div class="project_content">
-                <div class="project_buttons">
+                <div class="project_buttons element-animation">
                     <div class="project_button">online store</div>
                     <div class="project_button">cosmetics</div>
                     <div class="project_button project_hide">redesign</div>
                 </div>
-                <img class="project_image eltrendy_image" src="img/projects/1000/eltrendy.png" alt="">
+                <img class="project_image eltrendy_image element-animation" src="img/projects/1000/eltrendy.png" alt="">
                 <div class="project_info">
-                    <div class="project_title eltrendy_title cursor_pointer">
+                    <div class="project_title eltrendy_title cursor_pointer element-animation">
                         <p class="cursor_pointer">eltrendy store</p>
                         <img class="cursor_pointer" src="img/projects/arrow.svg" alt="">
                     </div>
-                    <span class="eltrendy_description">
+                    <span class="eltrendy_description element-animation">
                         ElTrendy.store is an online store that contains the most popular brands <br>for harmony and beauty. ElTrendy is one of the top 10 most famous <br>studios in Russia.
                     </span>
                 </div>
@@ -402,18 +402,18 @@ function resetProjectList(){
 <div class="projects_col">
     <div class="project">
         <div class="project_content">
-            <div class="project_buttons">
+            <div class="project_buttons element-animation">
                 <div class="project_button">corporate</div>
                 <div class="project_button project_hide">ui</div>
                 <div class="project_button">redesign</div>
             </div>
-            <img class="project_image aston_image" src="img/projects/1000/aston.png" alt="">
+            <img class="project_image aston_image element-animation" src="img/projects/1000/aston.png" alt="">
             <div class="project_info">
-                <div class="project_title aston_title cursor_pointer">
+                <div class="project_title aston_title cursor_pointer element-animation">
                     <p class="cursor_pointer">aston martin</p>
                     <img class="cursor_pointer" src="img/projects/arrow.svg" alt="">
                 </div>
-                <span class="aston_description">
+                <span class="aston_description element-animation">
                     Aston Martin is the iconic British sport car brand that has stood for beautiful, hand-crafted cars that are exhilarating to drive since 1913. This project is a redesign of official Aston Martin website. The main goal was to improve UI and UX parts bringing Aston Martin spirit.
                 </span>
             </div>
@@ -421,18 +421,18 @@ function resetProjectList(){
     </div>
     <div class="project">
         <div class="project_content">
-            <div class="project_buttons">
+            <div class="project_buttons element-animation">
                 <div class="project_button">news website</div>
                 <div class="project_button">ui/ux</div>
                 <div class="project_button project_hide">redesign</div>
             </div>
-            <img class="project_image sky_news_image" src="img/projects/1000/sky_news.png" alt="">
+            <img class="project_image sky_news_image element-animation" src="img/projects/1000/sky_news.png" alt="">
             <div class="project_info">
-                <div class="project_title sky_title cursor_pointer">
+                <div class="project_title sky_title cursor_pointer element-animation">
                     <p class="cursor_pointer">sky news</p>
                     <img class="cursor_pointer" src="img/projects/arrow.svg" alt="">
                 </div>
-                <span class="sky_news_description">
+                <span class="sky_news_description element-animation">
                     Sky News is a British free-to-air television news channel and organisation which started broadcasting since February 1989, becoming the UK's first round-the-clock news channel. The audience is estimated at 150 million people worldwide.
                 </span>
             </div>
@@ -440,18 +440,18 @@ function resetProjectList(){
     </div>
     <div class="project">
         <div class="project_content">
-            <div class="project_buttons">
+            <div class="project_buttons element-animation">
                 <div class="project_button">landing page</div>
                 <div class="project_button">real estate</div>
                 <div class="project_button project_hide">concept</div>
             </div>
-            <img class="project_image goldory_image" src="img/projects/1000/goldory.png" alt="">
+            <img class="project_image goldory_image element-animation" src="img/projects/1000/goldory.png" alt="">
             <div class="project_info">
-                <div class="project_title goldory_title cursor_pointer">
+                <div class="project_title goldory_title cursor_pointer element-animation">
                     <p class="cursor_pointer">goldory</p>
                     <img class="cursor_pointer" src="img/projects/arrow.svg" alt="">
                 </div>
-                <span class="goldory_description">
+                <span class="goldory_description element-animation">
                     Goldory is a website concept made for a real estate company based in Moscow. The Goldory Luxury House has bright and spacious rooms, hight ceilings and geometric facade elements.
                 </span>
             </div>
@@ -587,7 +587,133 @@ function projectBtns(x,y) {
     project.addEventListener('click',() => window.open(y));
 }
 
+function modalClose(){
+    const modalClose = document.querySelector('.modal_close');
+    const modalCloseBackground = document.querySelector('.modal_close_background');
+    const fixedOverlay = document.querySelector('.fixed_overlay');
+    const modalOpen = document.querySelectorAll('.about_service_button');
+
+
+    // modalOpen.addEventListener('click', () => {
+    //     fixedOverlay.classList.remove('dn');
+    // })
+    modalOpen.forEach(e => {
+        e.addEventListener('click', () => {
+            //fixedOverlay.classList.add('dib')
+            let website;
+            const websiteType = document.querySelectorAll('.modal_website_type');
+            websiteType.forEach(event => {
+                if(e.classList.contains('landing_page')){
+                    website = 'landing page'
+                    event.innerHTML = 'landing page'
+                } else if(e.classList.contains('online_store')){
+                    website = 'online store'
+                    event.innerHTML = 'online store'
+                } else if(e.classList.contains('corporate_website')){
+                    website = 'corporate website'
+                    event.innerHTML = 'corporate website'
+                } else if(e.classList.contains('agency_portfolio')){
+                    website = 'agency / portfolio'
+                    event.innerHTML = 'agency / portfolio'
+                } else if(e.classList.contains('news_website')){
+                    website = 'news website'
+                    event.innerHTML = 'news website'
+                }
+            })
+
+            console.log(website);
+            fixedOverlay.classList.remove('dn');
+            console.log('a');
+            
+        })
+    })
+
+    modalClose.addEventListener('click', () => {
+        fixedOverlay.classList.add('dn');
+    });
+    modalCloseBackground.addEventListener('click', () => {
+        fixedOverlay.classList.add('dn');
+    });
+}
+function sendToMail(){
+    const form = document.querySelector('.modal_form')
+    const btn = document.querySelector('.modal_button');
+    const name = document.querySelector('.modal_name');
+    const email = document.querySelector('.modal_email');
+    const message = document.querySelector('.modal_message');
+
+
+
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log(name.value, email.value, message.value);
+        btn.value = 'Sending...';
+
+        // const serviceID = 'web_designer';
+        // const templateID = 'template_ox797ed';
+     
+        // emailjs.sendForm(serviceID, templateID,{
+        //     from_name: "landing page",
+        //     to_name: "user",
+        //     message: "010101",
+        //     //reply_to: "123",
+        // })
+        //  .then(() => {
+        //    btn.value = 'Send Email';
+        //    alert('Sent!');
+        //  }, (err) => {
+        //    btn.value = 'Send Email';
+        //    alert(JSON.stringify(err));
+        //  });
+        emailjs.send("web_designer","template_ox797ed",{
+            from_name: "landing page",
+            to_name: name.value,
+            message: message.value,
+            reply_to: email.value
+        })
+            .then(() => {
+            btn.value = 'Send Email';
+            alert('Sent!');
+         }, (err) => {
+            btn.value = 'Send Email';
+            alert(JSON.stringify(err));
+         });
+    })
+
+
+}
+
+
+function elementAnimation() {
+    function onEntry(entry) {
+        entry.forEach(change => {
+          if (change.isIntersecting) {
+           change.target.classList.add('element-show');
+          }
+        });
+      }
+      
+      let options = {
+        threshold: [0.5] };
+      let observer = new IntersectionObserver(onEntry, options);
+      let elements = document.querySelectorAll('.element-animation');
+      
+      for (let elm of elements) {
+        observer.observe(elm);
+      }
+}
+
+
+elementAnimation();
+sendToMail();
+
+
+
+
+
+modalClose();
 
 
 //emailMe();
 stepList();
+

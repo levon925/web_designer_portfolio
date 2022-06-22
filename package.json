@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "node js/mailer.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "googleapis": "^103.0.0",
+    "nodemailer": "^6.7.5"
+  }
+}

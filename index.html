@@ -11,41 +11,63 @@
     <link rel="stylesheet" media="all and (max-width:999px)" href="css/main_640px.css">
     <link rel="stylesheet" media="all and (max-width:639px)" href="css/main_320px.css">
     <script src="js/projects_texts.js" defer></script>
+    <script src="js/mailer.js" defer></script>
 </head>
 <body>
+    <div class="fixed_overlay dn fixed_overlay_modal">
+        <div class="modal_close_background"></div>
+        <div class="modal">
+            <img class="modal_close cursor_pointer" src="img/modal_close.svg" alt="">
+            <div class="modal_content">
+                <p class="modal_title">Leave a request for a <span class="modal_title modal_website_type">landing page</span></p>
+                <p class="modal_description">
+                    <span>A landing page is a page on your site that is designed to convert visitors into leads. Used to enhance the effectiveness of advertising, increase the audience.</span> <br><br>
+                    If you have any <span class="modal_website_type">landing page</span> project, please contact me by filling out this form.
+                </p>
+                <form class="modal_form" action="sumbit">
+                    <div class="modal_input_group">
+                        <input class="modal_input modal_mandatory modal_name" placeholder="Name*" type="text" name="Name" id="from_name">
+                        <input class="modal_input modal_mandatory modal_email" placeholder="Email*" type="email" name="E-mail" id="to_name">
+                    </div>
+                    <textarea class="modal_input modal_message" placeholder="Your message" type="text" name="Message" id="message"></textarea>
+                    <input class="modal_button" type="submit" id="button" value="SEND A REQUEST">
+                </form>
+            </div>
+        </div>
+    </div>
     <header>
         <p class="header_title cursor_pointer">
-           <a class="cursor_pointer" href="/">LANA TOPCHYAN</a> 
+           <a class="cursor_pointer element-animation" href="/">LANA TOPCHYAN</a> 
         </p>
-        <div class="header_icons">
-            <img class="social cursor_pointer" id="behancelink" src="img/header/behance.svg" alt="behance">
-            <img class="social_down cursor_pointer" id="instagram_link" src="img/header/instagram.svg" alt="instagram">
-            <img class="social cursor_pointer" id="facebook_link" src="img/header/facebook.svg" alt="facebook">
+        <div class="header_icons element-animation">
+            <img class="social cursor_pointer element-animation" id="behancelink" src="img/header/behance.svg" alt="behance">
+            <img class="social_down cursor_pointer element-animation" id="instagram_link" src="img/header/instagram.svg" alt="instagram">
+            <img class="social cursor_pointer element-animation" id="facebook_link" src="img/header/facebook.svg" alt="facebook">
         </div>
     </header>
     <main>
         <div class="cover">
-            <p class="cover_title">web designer</p>
+            <p class="cover_title element-animation">web designer</p>
             <div class="cover_photo">
-                <img class="cover_img" src="img/1000/lana_1.svg" alt="">
+                <img class="cover_img element-animation" src="img/1000/lana_1.svg" alt="">
             </div>
         </div>
         <div class="about">
             <div class="about_col">
-                <div class="about_row">
-                    <p>about me</p>
-                    <span class="first_text">I'm Lana Topchyan, junior web designer based in Tbilisi, Georgia, working remotely all over the world. I‘m in love with web design, typography and minimal style.</span>
+                <div class="about_row ">
+                    <p class="element-animation">about me</p>
+                    <span class="first_text element-animation">I'm Lana Topchyan, junior web designer based in Tbilisi, Georgia, working remotely all over the world. I‘m in love with web design, typography and minimal style.</span>
                 </div>
                 <div class="about_row">
-                    <span class="second_text">I design thoughtful web interfaces that are comfortable to interact with. I like the minimalist aesthetic, simple effective solutions and light animation.</span>
+                    <span class="second_text element-animation">I design thoughtful web interfaces that are comfortable to interact with. I like the minimalist aesthetic, simple effective solutions and light animation.</span>
                 </div>
             </div>
-            <img class="about_img" src="img/lana/lana_2.svg" alt="">
+            <img class="about_img element-animation" src="img/lana/lana_2.svg" alt="">
         </div>
         <div class="process">
-            <p class="process_title">work process</p>
+            <p class="process_title element-animation">work process</p>
             <div class="process_steps">
-                <div class="step">
+                <div class="step element-animation">
                     <div class="step_button">
                         <div class="step_title">
                             <p class="step_number">01</p>
@@ -59,7 +81,7 @@
                         The start of work begins after receiving the completed brief and all the necessary materials for the project. The stage includes a discussion of the project objectives, ways of their implementation, as well as technical issues.
                     </p>
                 </div>
-                <div class="step">
+                <div class="step element-animation">
                     <div class="step_button">
                         <div class="step_title">
                             <p class="step_number">02</p>
@@ -72,7 +94,7 @@
                         Conducting a competitive analysis, researching the target audience, their pains and needs. Creating a model of target user behavior on the site. Analytics in the development of sites makes it possible to identify the main preferences of users, on the basis of which it is possible to develop a site that contributes to the development of the company and attracting new customers.
                     </p>
                 </div>
-                <div class="step">
+                <div class="step element-animation">
                     <div class="step_button">
                         <div class="step_title">
                             <p class="step_number">03</p>
@@ -86,7 +108,7 @@
 
                     </p>
                 </div>
-                <div class="step">
+                <div class="step element-animation">
                     <div class="step_button">
                         <div class="step_title">
                             <p class="step_number">04</p>
@@ -102,7 +124,7 @@ fonts and styles.
 
                     </p>
                 </div>
-                <div class="step">
+                <div class="step element-animation">
                     <div class="step_button">
                         <div class="step_title">
                             <p class="step_number">05</p>
@@ -116,7 +138,7 @@ fonts and styles.
 
                     </p>
                 </div>
-                <div class="step">
+                <div class="step element-animation">
                     <div class="step_button">
                         <div class="step_title">
                             <p class="step_number">06</p>
@@ -135,22 +157,22 @@ a figma file, including sources and adaptive.
         <div class="projects">
             <div class="projects_cols">
                 <div class="projects_col">
-                    <p class="projects_title">selected projects</p>
+                    <p class="projects_title element-animation">selected projects</p>
                     <div class="projects_column">
                         <div class="project">
                             <div class="project_content">
-                                <div class="project_buttons">
+                                <div class="project_buttons element-animation">
                                     <div class="project_button">online store</div>
                                     <div class="project_button project_hide">fashion</div>
                                     <div class="project_button">redesign</div>
                                 </div>
-                                <img class="project_image mura_image" src="img/projects/1000/mura.png" alt="">
+                                <img class="project_image mura_image element-animation" src="img/projects/1000/mura.png" alt="">
                                 <div class="project_info">
-                                    <div class="project_title mura_title">
+                                    <div class="project_title mura_title element-animation">
                                         <p>mura boutique</p>
                                         <img src="img/projects/arrow.svg" alt="">
                                     </div>
-                                    <span class="mura_description">
+                                    <span class="mura_description element-animation">
                                         This project is a redesign of Mura boutique website. 
                                         <br> Mura is a female fashion boutique that started in 2011 by founder Asako Nakamura in Noosa, Australia. Mura offers beautiful clothing, shoes and accessories.
                                     </span>
@@ -257,86 +279,86 @@ a figma file, including sources and adaptive.
                     </div>
                 </div>
             </div>
-            <div class="projects_behance behance_link cursor_pointer">
-                <span class="cursor_pointer">View on Behance</span>
+            <div class="projects_behance behance_link cursor_pointer element-animation">
+                <span class="cursor_pointer ">View on Behance</span>
                 <img class="behance_arrow cursor_pointer" src="img/projects/behance_arrow.svg" alt="">
             </div>
         </div>
         <div class="services">
-            <p class="services_title">services and cost</p>
+            <p class="services_title element-animation">services and cost</p>
             <div class="service_list">
-                <div class="service">
+                <div class="service element-animation">
                     <p class="service_title">landing pages</p>
                     <div class="service_description">
                         <span class="service_price">from $200</span>
-                        <div class="about_service_button cursor_pointer">
-                            <span class="about_service_link cursor_pointer">read about this type of site</span>
+                        <div class="about_service_button landing_page cursor_pointer">
+                            <span class="about_service_link cursor_pointer">leave a request</span>
                             <img class="cursor_pointer" src="img/service/arrow.svg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="service">
+                <div class="service element-animation">
                     <p class="service_title">online stores</p>
                     <div class="service_description">
                         <span class="service_price">from $400</span>
-                        <div class="about_service_button cursor_pointer">
-                            <span class="about_service_link cursor_pointer">read about this type of site</span>
+                        <div class="about_service_button online_store cursor_pointer">
+                            <span class="about_service_link cursor_pointer">leave a request</span>
                             <img class="cursor_pointer" src="img/service/arrow.svg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="service">
+                <div class="service element-animation">
                     <p class="service_title">corporate websites</p>
                     <div class="service_description">
                         <span class="service_price">from $500</span>
-                        <div class="about_service_button cursor_pointer">
-                            <span class="about_service_link cursor_pointer">read about this type of site</span>
+                        <div class="about_service_button corporate_website cursor_pointer">
+                            <span class="about_service_link cursor_pointer">leave a request</span>
                             <img class="cursor_pointer" src="img/service/arrow.svg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="service">
+                <div class="service element-animation">
                     <p class="service_title">agency / portfolio</p>
                     <div class="service_description">
                         <span class="service_price">from $400</span>
-                        <div class="about_service_button cursor_pointer">
-                            <span class="about_service_link cursor_pointer">read about this type of site</span>
+                        <div class="about_service_button agency_portfolio cursor_pointer">
+                            <span class="about_service_link cursor_pointer">leave a request</span>
                             <img class="cursor_pointer" src="img/service/arrow.svg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="service">
+                <div class="service element-animation">
                     <p class="service_title">news websites</p>
                     <div class="service_description">
                         <span class="service_price">from $500</span>
-                        <div class="about_service_button cursor_pointer">
-                            <span class="about_service_link cursor_pointer">read about this type of site</span>
+                        <div class="about_service_button news_website cursor_pointer">
+                            <span class="about_service_link cursor_pointer">leave a request</span>
                             <img class="cursor_pointer" src="img/service/arrow.svg" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-            <span class="hourly_payment">*Or hourly payment - 10$ / hour</span>
+            <span class="hourly_payment element-animation">*Or hourly payment - 10$ / hour</span>
         </div>
     </main>
     <footer>
         <div class="footer">
             
             <div class="footer_cols">
-                <p class="footer_title">let's work together</p>
+                <p class="footer_title element-animation">let's work together</p>
                 <div class="footer_col">
-                    <span class="happy">I’m always happy to talk. Feel free to contact me :)</span>
-                    <span class="mail send_mail cursor_pointer">lanatopchyan.design@gmail.com</span>
+                    <span class="happy element-animation">I’m always happy to talk. Feel free to contact me :)</span>
+                    <span class="mail send_mail cursor_pointer element-animation">lanatopchyan.design@gmail.com</span>
                 </div>
             </div>
-            <div class="email_me send_mail cursor_pointer">email me</div>
+            <div class="email_me send_mail cursor_pointer element-animation">email me</div>
             <div class="footer_links">
-                <div class="footer_social email_move">
+                <div class="footer_social email_move element-animation">
                     <span class="behance_link cursor_pointer">behance</span>
                     <span class="instagram_link cursor_pointer">instagram</span>
                     <span class="facebook_link cursor_pointer">facebook</span>
                 </div>
-                <div class="footer_copyright email_move">
+                <div class="footer_copyright email_move element-animation">
                     <span>design by <u>me</u></span>
                     <span>built by <u>LZ</u></span>
                     <span>©2022</span>
@@ -344,5 +366,11 @@ a figma file, including sources and adaptive.
             </div>
         </div>
     </footer>
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('90Jib6YG5qnlaCxgM')
+</script>
 </body>
 </html>

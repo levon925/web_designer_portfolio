@@ -10,6 +10,174 @@
     font-style: normal; 
     font-weight: 400; 
     } 
+
+
+
+
+
+
+
+
+
+
+
+
+    .element-animation {
+    
+    
+    
+    
+        /* Скроем элемент в начальном состоянии */
+        opacity: 0;
+        
+      }
+      
+    .element-animation.element-show {
+        opacity: 1;
+        transition: all 1.5s;
+        transform: translateY(0%);
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .fixed_overlay {
+        position: fixed;
+        overflow: auto;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99999999;
+    }
+    
+    .fixed_overlay_modal {
+        text-align: center;
+        white-space: nowrap;
+    }
+    
+    .fixed_overlay_modal::after {
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        height: 100%;
+        content: '';
+    }
+    .modal_close_background{
+        position: fixed;
+        overflow: auto;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .modal{
+        display: inline-block;
+        vertical-align: middle;
+        width: 675px;
+        height: 679px;
+        background: #252525;
+        position: relative;
+        /* z-index: 999999999; */
+    }
+    .modal_content{
+        padding-top: 35px;
+        padding-left: 50px;
+        width: 575px;
+        height: 612px;
+        text-align: left;
+        white-space: normal;
+    }
+    .dib{
+        display: inline-block;
+    }
+    .modal_title{
+        width: 499px;
+        font-family: 'Monument Extended';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 140%;
+        /* or 42px */
+        text-transform: none;
+        margin: 0;
+    
+        color: #FFFFFF;
+    }
+    .modal_description{
+        font-family: 'Plain';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #C9C9C9;
+        text-transform: none;
+    }
+    .modal_close{
+        position: absolute;
+        left: 620px;
+        top: 39px;
+    }
+    .modal_input_group{
+        display: flex;
+        justify-content: space-between;
+    }
+    .modal_input{
+        color: white;
+        background: #383838;
+        border: none;
+        font-family: 'Plain';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .modal_mandatory{
+        width: 259px;
+        height: 60px;
+        padding-left: 20px;
+    }
+    .modal_message{
+        width: 535px;
+        height: 144px;
+        margin: 17px 0;
+        padding: 20px;
+        resize: none;
+    }
+    /* .dn{
+        display: none;
+    } */
+    .modal_button{
+        
+        width: 575px;
+        height: 78px;
+        background: #000000;
+        color: white;
+        font-family: 'Plain';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        text-transform: uppercase;
+    }
+
+
+
+
+
+
+
+
+
+
 body {
     background: #181818;
     color: white;
