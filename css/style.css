@@ -100,16 +100,17 @@
         display: inline-block;
         vertical-align: middle;
         width: 675px;
-        height: 679px;
+        
         background: #252525;
         position: relative;
         /* z-index: 999999999; */
     }
     .modal_content{
+        padding-bottom: 35px;
         padding-top: 35px;
         padding-left: 50px;
         width: 575px;
-        height: 612px;
+        
         text-align: left;
         white-space: normal;
     }
@@ -172,6 +173,7 @@
     /* .dn{
         display: none;
     } */
+
     .modal_button{
         
         width: 575px;
@@ -184,6 +186,7 @@
         font-size: 16px;
         line-height: 21px;
         text-transform: uppercase;
+        
     }
 
 
@@ -290,6 +293,8 @@ main{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    
+    
 }
 .step_button{
     display: flex;
@@ -304,13 +309,35 @@ main{
     font-weight: 400;
     text-transform: none;
     color: #C9C9C9;
-
+    
+    display: flex;
+    overflow: hidden;
+    
 }
+
+.modal_success{
+    width: 180px;
+    height: 180px;
+    margin-left: 34%
+  
+  
+}
+
 .opacity0{
+    max-height: 0;
     opacity: 0;
+    transform: translate(0,-30%);
+    transition: 0.5s;
+    
 }
 .opacity1 {
-    opacity: 1;
+    
+    transition: opacity linear, height;
+    transform: translate(0,0);
+    transition: 0.5s;
+    
+    
+    
 }
 .projects_title {
     margin: 0;

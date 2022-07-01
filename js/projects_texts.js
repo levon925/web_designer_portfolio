@@ -8,7 +8,7 @@ const headerIcons = document.querySelector('.header_icons'),
     
 
 //console.log(width);
-
+const btn = document.querySelectorAll('.modal_button');
 changeText();
 window.onresize = changeText;
 
@@ -82,7 +82,7 @@ function changeText() {
         aston.textContent = 'Aston Martin is the iconic British sport car brand \r\nthat has stood for beautiful, hand-crafted cars that \r\nare exhilarating to drive since 1913. This project is \r\na redesign of official Aston Martin website. ';
         skyNews.textContent = "Sky News is a British free-to-air television news \r\nchannel and organisation which started \r\nbroadcasting since February 1989, becoming the \r\nUK's first round-the-clock news channel. ";
         goldory.textContent = 'Goldory is a website concept made for a real \r\nestate company based in Moscow. The Goldory \r\nLuxury House has bright and spacious rooms, \r\nhight ceilings and geometric facade elements.';
-        headerIcons.innerHTML= "<img class='social' src='img/header/behance.svg' alt='behance'><img class='social_down' src='img/header/instagram.svg' alt='instagram'><img class='social' src='img/header/facebook.svg' alt='facebook'>";
+        headerIcons.innerHTML= "<img class='social behance_link cursor_pointer' src='img/header/behance.svg' alt='behance'><img class='social_down instagram_link cursor_pointer' src='img/header/instagram.svg' alt='instagram'><img class='social facebook_link cursor_pointer' src='img/header/facebook.svg' alt='facebook'>";
         concept.textContent = "first concept ";
         imageChange(1000);
  
@@ -102,7 +102,7 @@ function changeText() {
         aston.textContent ="This project is a redesign of official Aston \r\nMartin website. The main goal was to \r\nimprove UI and UX parts bringing Aston \r\nMartin spirit.";
         skyNews.textContent ="Sky News is a British free-to-air television \r\nnews channel and organisation which \r\nstarted broadcasting since February 1989, \r\nbecoming the UK's first round-the-clock \r\nnews channel. ";
         goldory.textContent ="Goldory is a website concept made for a \r\nreal estate company. The Goldory Luxury \r\nHouse has bright and spacious rooms, \r\nhight ceilings and geometric facade \r\nelements.";
-        headerIcons.innerHTML= "<img class='social' src='img/header/behance.svg' alt='behance'><img class='social_down' src='img/header/instagram.svg' alt='instagram'><img class='social' src='img/header/facebook.svg' alt='facebook'>";
+        headerIcons.innerHTML= "<img class='social behance_link cursor_pointer' src='img/header/behance.svg' alt='behance'><img class='social_down instagram_link cursor_pointer' src='img/header/instagram.svg' alt='instagram'><img class='social facebook_link cursor_pointer' src='img/header/facebook.svg' alt='facebook'>";
         concept.textContent = "first concept ";
     } else if(width < 623 && width >= 0) {
         
@@ -470,9 +470,12 @@ function stepList(){
     stepButton.forEach(e =>{
         const stepImage = e.querySelectorAll('img');
         const stepDescription = e.querySelector('.step_description');
+        stepDescription.classList.add('opacity0');
         stepImage.forEach(e =>{
             e.addEventListener('click', () => {
                 stepDescription.classList.toggle('dn');
+                stepDescription.classList.toggle('opacity0');
+                stepDescription.classList.toggle('opacity1');
                 stepImage.forEach(e => {
                     e.classList.toggle('dn');
                 });
@@ -604,22 +607,24 @@ function modalClose(){
             //fixedOverlay.classList.add('dib')
             let website;
             const websiteType = document.querySelectorAll('.modal_website_type');
+            
+            
             websiteType.forEach(event => {
                 if(e.classList.contains('landing_page')){
-                    website = 'landing page'
-                    event.innerHTML = 'landing page'
+                    website = 'landing page';
+                    event.innerHTML = 'landing page';
                 } else if(e.classList.contains('online_store')){
-                    website = 'online store'
-                    event.innerHTML = 'online store'
+                    website = 'online store';
+                    event.innerHTML = 'online store';
                 } else if(e.classList.contains('corporate_website')){
-                    website = 'corporate website'
-                    event.innerHTML = 'corporate website'
+                    website = 'corporate website';
+                    event.innerHTML = 'corporate website';
                 } else if(e.classList.contains('agency_portfolio')){
-                    website = 'agency / portfolio'
-                    event.innerHTML = 'agency / portfolio'
+                    website = 'agency / portfolio';
+                    event.innerHTML = 'agency / portfolio';
                 } else if(e.classList.contains('news_website')){
-                    website = 'news website'
-                    event.innerHTML = 'news website'
+                    website = 'news website';
+                    event.innerHTML = 'news website';
                 }
             })
 
@@ -630,6 +635,11 @@ function modalClose(){
         })
     })
 
+    btn[1].addEventListener('click', e => {
+        e.preventDefault();
+        fixedOverlay.classList.add('dn');
+    });
+
     modalClose.addEventListener('click', () => {
         fixedOverlay.classList.add('dn');
     });
@@ -638,18 +648,26 @@ function modalClose(){
     });
 }
 function sendToMail(){
-    const form = document.querySelector('.modal_form')
-    const btn = document.querySelector('.modal_button');
+    const form = document.querySelector('.modal_form');
+    const description = document.querySelectorAll('.modal_description');
     const name = document.querySelector('.modal_name');
     const email = document.querySelector('.modal_email');
     const message = document.querySelector('.modal_message');
+    const content = document.querySelector('.modal_content');
+    const title = document.querySelectorAll('.modal_title');
+    const inputs = document.querySelector('.modal_input_group');
+    const input = document.querySelector('.modal_message');
+    const success = document.querySelector('.modal_success');
 
+    btn[1].addEventListener('click', e => {
+        e.preventDefault();
+        fixedOverlay.classList.add('dn');
+    });
 
-
-    btn.addEventListener('click', (e) => {
+    btn[0].addEventListener('click', (e) => {
         e.preventDefault();
         console.log(name.value, email.value, message.value);
-        btn.value = 'Sending...';
+        btn[0].value = 'Sending...';
 
         // const serviceID = 'web_designer';
         // const templateID = 'template_ox797ed';
@@ -674,10 +692,20 @@ function sendToMail(){
             reply_to: email.value
         })
             .then(() => {
-            btn.value = 'Send Email';
+            btn[0].value = 'Send Email';
             alert('Sent!');
+            title[0].classList.add('dn');
+            title[2].classList.remove('dn');
+            btn[0].classList.add('dn');
+            btn[1].classList.remove('dn');
+            description[0].classList.add('dn');
+            description[1].classList.remove('dn');
+            inputs.classList.add('dn');
+            input.classList.add('dn');
+            success.classList.remove('dn');
+            //form.innerHTML = '';
          }, (err) => {
-            btn.value = 'Send Email';
+            btn[0].value = 'Send Email';
             alert(JSON.stringify(err));
          });
     })
