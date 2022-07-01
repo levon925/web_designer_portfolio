@@ -3,6 +3,11 @@
 const headerIcons = document.querySelector('.header_icons'),
       about = document.querySelector('.about'),
       concept = document.querySelector('.concept');
+      const title = document.querySelectorAll('.modal_title');
+      const inputs = document.querySelector('.modal_input_group');
+      const input = document.querySelector('.modal_message');
+      const success = document.querySelector('.modal_success');
+      const description = document.querySelectorAll('.modal_description');
 
 
     
@@ -65,9 +70,11 @@ function changeText() {
     aston.setAttribute('style', 'white-space: pre;');
     skyNews.setAttribute('style', 'white-space: pre;');
     goldory.setAttribute('style', 'white-space: pre;');
-    headerIcons.innerHTML= "<img class='social behance_link cursor_pointer' src='img/header/behance.svg' alt='behance'><img class='social_down instagram_link cursor_pointer' src='img/header/instagram.svg' alt='instagram'><img class='social facebook_link cursor_pointer' src='img/header/facebook.svg' alt='facebook'>";
+    //headerIcons.innerHTML= "<img class='social behance_link cursor_pointer' src='img/header/behance.svg' alt='behance'><img class='social_down instagram_link cursor_pointer' src='img/header/instagram.svg' alt='instagram'><img class='social facebook_link cursor_pointer' src='img/header/facebook.svg' alt='facebook'>";
         //concept.textContent = "first concept ";
     if(width < 1583 && width >= 983){
+        
+        modalClose('Leave a request for<br>');
         resetProjectList();
         removeProjectButtons();
         const mura = document.querySelector('.mura_description'),
@@ -82,11 +89,13 @@ function changeText() {
         aston.textContent = 'Aston Martin is the iconic British sport car brand \r\nthat has stood for beautiful, hand-crafted cars that \r\nare exhilarating to drive since 1913. This project is \r\na redesign of official Aston Martin website. ';
         skyNews.textContent = "Sky News is a British free-to-air television news \r\nchannel and organisation which started \r\nbroadcasting since February 1989, becoming the \r\nUK's first round-the-clock news channel. ";
         goldory.textContent = 'Goldory is a website concept made for a real \r\nestate company based in Moscow. The Goldory \r\nLuxury House has bright and spacious rooms, \r\nhight ceilings and geometric facade elements.';
-        headerIcons.innerHTML= "<img class='social behance_link cursor_pointer' src='img/header/behance.svg' alt='behance'><img class='social_down instagram_link cursor_pointer' src='img/header/instagram.svg' alt='instagram'><img class='social facebook_link cursor_pointer' src='img/header/facebook.svg' alt='facebook'>";
+        //headerIcons.innerHTML= "<img class='social behance_link cursor_pointer' src='img/header/behance.svg' alt='behance'><img class='social_down instagram_link cursor_pointer' src='img/header/instagram.svg' alt='instagram'><img class='social facebook_link cursor_pointer' src='img/header/facebook.svg' alt='facebook'>";
         concept.textContent = "first concept ";
         imageChange(1000);
  
     } else if(width < 983 && width >= 623) {
+        
+        modalClose('Leave a request for<br>');
         resetProjectList();
         removeProjectButtons();
         imageChange(640);
@@ -102,10 +111,11 @@ function changeText() {
         aston.textContent ="This project is a redesign of official Aston \r\nMartin website. The main goal was to \r\nimprove UI and UX parts bringing Aston \r\nMartin spirit.";
         skyNews.textContent ="Sky News is a British free-to-air television \r\nnews channel and organisation which \r\nstarted broadcasting since February 1989, \r\nbecoming the UK's first round-the-clock \r\nnews channel. ";
         goldory.textContent ="Goldory is a website concept made for a \r\nreal estate company. The Goldory Luxury \r\nHouse has bright and spacious rooms, \r\nhight ceilings and geometric facade \r\nelements.";
-        headerIcons.innerHTML= "<img class='social behance_link cursor_pointer' src='img/header/behance.svg' alt='behance'><img class='social_down instagram_link cursor_pointer' src='img/header/instagram.svg' alt='instagram'><img class='social facebook_link cursor_pointer' src='img/header/facebook.svg' alt='facebook'>";
+        //headerIcons.innerHTML= "<img class='social behance_link cursor_pointer' src='img/header/behance.svg' alt='behance'><img class='social_down instagram_link cursor_pointer' src='img/header/instagram.svg' alt='instagram'><img class='social facebook_link cursor_pointer' src='img/header/facebook.svg' alt='facebook'>";
         concept.textContent = "first concept ";
     } else if(width < 623 && width >= 0) {
         
+        modalClose('Request for');
         imageChange(320);
         removeProjectButtons();
         const projects = [`<div class="project">
@@ -230,7 +240,7 @@ function changeText() {
 
 
 
-        const headerIconsImages = headerIcons.querySelectorAll('img'),
+        //const headerIconsImages = headerIcons.querySelectorAll('img'),
               projectsCols = document.querySelectorAll('.projects_col');
         //projectsCols.innerHTML="<div class='projects_col'><p class='projects_title'>selected projects</p><div class='projects_column'></div></div>";
             projectsCols[1].remove();
@@ -257,7 +267,7 @@ function changeText() {
               aston.textContent ="This project is a redesign of official Aston \r\nMartin website. The main goal was to \r\nimprove UI and UX parts bringing Aston \r\nMartin spirit.";
               skyNews.textContent ="Sky News is a British free-to-air television \r\nnews channel and organisation which \r\nstarted broadcasting since February 1989, \r\nbecoming the UK's first round-the-clock \r\nnews channel. ";
               goldory.textContent ="Goldory is a website concept made for a \r\nreal estate company. The Goldory Luxury \r\nHouse has bright and spacious rooms, \r\nhight ceilings and geometric facade \r\nelements.";
-              headerIcons.innerHTML= "<img class='social' src='img/header/behance.svg' alt='behance'><img class='social_down' src='img/header/instagram.svg' alt='instagram'><img class='social' src='/img/header/facebook.svg' alt='facebook'>";
+              //headerIcons.innerHTML= "<img class='social behance_link cursor_pointer' src='img/header/behance.svg' alt='behance'><img class='social_down instagram_link cursor_pointer' src='img/header/instagram.svg' alt='instagram'><img class='social facebook_link cursor_pointer' src='img/header/facebook.svg' alt='facebook'>";
 
 
 
@@ -267,24 +277,25 @@ function changeText() {
         // for(i = 0; i < 3; i++){
         //     headerIcons.removeChild(headerIconsImages[i]);
         // }
-        headerIconsImages.forEach(element => {
-            element.remove();
-        });
+        // headerIconsImages.forEach(element => {
+        //     element.remove();
+        // });
         // const burgerMenu = document.createElement('img');
         // burgerMenu.src = 'img/projects/menu.svg';
         // burgerMenu.classList.add('burger_menu');
         const burgerMenu = "<img class='burger_menu' src='img/projects/menu.svg'>";
-        headerIcons.innerHTML=burgerMenu;
+        //headerIcons.innerHTML=burgerMenu;
         // headerIcons.appendChild(burgerMenu);
         // console.log(burgerMenu);
         about.innerHTML="<p>about me</p><div class='about_col'><span class='first_text'>I'm Lana Topchyan, junior web designer based in Tbilisi, Georgia, working remotely all over the world. I‘m in love with web design, typography and minimal style.</span><img class='about_img' src='img/lana/lana_2.svg'><span class='second_text'>I design thoughtful web interfaces that are comfortable to interact with. I like the minimalist aesthetic, simple effective solutions and light animation.</span></div>";
         concept.textContent = "concept ";
     }
     else {
+        
         resetProjectList();
         imageChange(1600);
         addProjectButtons();
-   
+        modalClose('Leave a request for<br>');
       
       
         mura.textContent = 'This project is a redesign of Mura boutique website. \r\nMura is a female fashion boutique that started in 2011 by founder Asako \r\nNakamura in Noosa, Australia. Mura offers beautiful clothing, shoes and \r\naccessories.';
@@ -293,6 +304,7 @@ function changeText() {
         aston.textContent = 'Aston Martin is the iconic British sport car brand that has stood for beautiful, \r\nhand-crafted cars that are exhilarating to drive since 1913. This project is a \r\nredesign of official Aston Martin website. The main goal was to improve UI and \r\nUX parts bringing Aston Martin spirit.';
         skyNews.textContent = "Sky News is a British free-to-air television news channel and organisation which \r\nstarted broadcasting since February 1989, becoming the UK's first round-the-\r\nclock news channel. The audience is estimated at 150 million people worldwide.";
         goldory.textContent = 'Goldory is a website concept made for a real estate company based in Moscow. \r\nThe Goldory Luxury House has bright and spacious rooms, hight ceilings and \r\ngeometric facade elements.';
+        
     }
 }
 function imageChange(x){
@@ -335,7 +347,7 @@ function resetProjectList(){
     projectList.innerHTML = "";
     console.log('reset');
     
-    socialHeaderButtons();
+    
     
     projectList.innerHTML = `<div class="projects_col">
     <p class="projects_title element-animation">selected projects</p>
@@ -578,12 +590,18 @@ function emailMe(){
 // projectLinks();
 
 function projectLinks() {
-    projectBtns('.mura_title','projects/MURA_BOUTIQUE.html');
-    projectBtns('.aston_title','projects/ASTON_MARTIN.html');
-    projectBtns('.nestle_title','projects/NESTLÉ_WEBSITE.html');
-    projectBtns('.sky_title','projects/SKY_NEWS.html');
-    projectBtns('.eltrendy_title','projects/ELTRENDY_STORE.html');
-    projectBtns('.goldory_title','projects/GOLDORY.html');
+    // projectBtns('.mura_title','projects/MURA_BOUTIQUE.html');
+    // projectBtns('.aston_title','projects/ASTON_MARTIN.html');
+    // projectBtns('.nestle_title','projects/NESTLÉ_WEBSITE.html');
+    // projectBtns('.sky_title','projects/SKY_NEWS.html');
+    // projectBtns('.eltrendy_title','projects/ELTRENDY_STORE.html');
+    // projectBtns('.goldory_title','projects/GOLDORY.html');
+    projectBtns('.mura_title','https://www.behance.net/gallery/101686571/MURA-BOUTIQUE-Online-store');
+    projectBtns('.aston_title','https://www.behance.net/gallery/135609021/ASTON-MARTIN-New-Website');
+    projectBtns('.nestle_title','https://www.behance.net/gallery/119210337/Nestl-Website-Redesign');
+    projectBtns('.sky_title','https://www.behance.net/gallery/107727851/Sky-news-redesign-website');
+    projectBtns('.eltrendy_title','https://www.behance.net/gallery/130266071/Online-cosmetics-store-redesign');
+    projectBtns('.goldory_title','https://www.behance.net/gallery/96286355/GOLDORY-Luxury-apartments');
 }
 
 function projectBtns(x,y) {
@@ -592,7 +610,7 @@ function projectBtns(x,y) {
     project.addEventListener('click',() => window.open(y));
 }
 
-function modalClose(){
+function modalClose(text){
     const modalClose = document.querySelector('.modal_close');
     const modalCloseBackground = document.querySelector('.modal_close_background');
     const fixedOverlay = document.querySelector('.fixed_overlay');
@@ -606,27 +624,48 @@ function modalClose(){
         e.addEventListener('click', () => {
             //fixedOverlay.classList.add('dib')
             let website;
-            const websiteType = document.querySelectorAll('.modal_website_type');
+            const websiteType = document.querySelector('.modal_website_type');
+            const modalText = document.querySelector('.modal_description_text');
             
+            title[1].classList.add('dn');
+            title[0].classList.remove('dn');
+            btn[1].classList.add('dn');
+            btn[0].classList.remove('dn');
+            description[1].classList.add('dn');
+            description[0].classList.remove('dn');
+            inputs.classList.remove('dn');
+            input.classList.remove('dn');
+            success.classList.add('dn');
+
             
-            websiteType.forEach(event => {
                 if(e.classList.contains('landing_page')){
                     website = 'landing page';
-                    event.innerHTML = 'landing page';
+                    //for<br>
+                    title[0].innerHTML = `${text} a landing page`;
+                    modalText.innerHTML=`A landing page is a page on your site that is designed to convert visitors into leads. Used to enhance the effectiveness of advertising, increase the audience. 
+                    <br><br>If you have any landing page project, please contact me by filling out this form.`;
                 } else if(e.classList.contains('online_store')){
                     website = 'online store';
-                    event.innerHTML = 'online store';
+                    title[0].innerHTML = `${text} an online store`;
+                    modalText.innerHTML=`An online store can exponentially increase the sales and profits of a business.  We’ll set up an online store with a user-friendly design to ensure that your business has everything it needs to flourish in the world of e-commerce.
+                    <br><br>Ready to create the best online store website? Please contact me by filling out this form and soon you will feel how it justifies itself.`;
                 } else if(e.classList.contains('corporate_website')){
                     website = 'corporate website';
-                    event.innerHTML = 'corporate website';
+                    title[0].innerHTML = `${text} a corporate website`;
+                    modalText.innerHTML=`The image of the company depends on the web design of the corporate site. A corporate website is typically the website that company use for brand recognition, showing company profile, business information like events or activity.
+                    <br><br>Ready to create the best corporate website? Please contact me by filling out this form and soon you will feel how it justifies itself.`;
                 } else if(e.classList.contains('agency_portfolio')){
                     website = 'agency / portfolio';
-                    event.innerHTML = 'agency / portfolio';
+                    title[0].innerHTML = `${text} an agency or portfolio`;
+                    modalText.innerHTML=`A portfolio website is a business card site that contains photographs, projects, orders and other achievements of the author or agency. Illustrative examples can increase interest in the product, and, consequently, increase its sales.
+                    <br><br>Ready to create the best portfolio/agency website? Please contact me by filling out this form and soon you will feel how it justifies itself.`;
                 } else if(e.classList.contains('news_website')){
                     website = 'news website';
-                    event.innerHTML = 'news website';
+                    title[0].innerHTML = `${text} a news website`;
+                    modalText.innerHTML=`A news portal is an Internet resource that specializes in collecting and issuing information and news. This is a large, multi-level site that contains tools for interacting with users and searching for publications, mailing lists, and much more. Such resources, as a rule, have a very complex hierarchical structure, including a huge number of sections and subsections.
+                    <br><br>If you are planning to redesign your news website or create from scratch, please contact me by filling out this form.`;
                 }
-            })
+            
 
             console.log(website);
             fixedOverlay.classList.remove('dn');
@@ -649,15 +688,12 @@ function modalClose(){
 }
 function sendToMail(){
     const form = document.querySelector('.modal_form');
-    const description = document.querySelectorAll('.modal_description');
+    
     const name = document.querySelector('.modal_name');
     const email = document.querySelector('.modal_email');
     const message = document.querySelector('.modal_message');
     const content = document.querySelector('.modal_content');
-    const title = document.querySelectorAll('.modal_title');
-    const inputs = document.querySelector('.modal_input_group');
-    const input = document.querySelector('.modal_message');
-    const success = document.querySelector('.modal_success');
+
 
     btn[1].addEventListener('click', e => {
         e.preventDefault();
@@ -693,9 +729,9 @@ function sendToMail(){
         })
             .then(() => {
             btn[0].value = 'Send Email';
-            alert('Sent!');
+            //alert('Sent!');
             title[0].classList.add('dn');
-            title[2].classList.remove('dn');
+            title[1].classList.remove('dn');
             btn[0].classList.add('dn');
             btn[1].classList.remove('dn');
             description[0].classList.add('dn');
@@ -733,15 +769,25 @@ function elementAnimation() {
       }
 }
 
+function builtBy() {
+    const builtBy = document.querySelector('.built_by');
+
+
+    builtBy.addEventListener('click', () => {
+        window.open('https://www.facebook.com/levon.zaxarian.1/')
+    });
+}
+
+builtBy();
 
 elementAnimation();
 sendToMail();
+socialHeaderButtons();
 
 
 
 
 
-modalClose();
 
 
 //emailMe();

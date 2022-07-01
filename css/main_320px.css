@@ -208,6 +208,61 @@ main {
     width: 168px;
     height: 20px;
 }
+.modal{
+    width: 280px;
+}
+.modal_button{
+    width: 240px;
+    height: 50px;
+    font-size: 12px;
+    line-height: 16px;
+}
+.modal_content{
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    width: 200px;
+}
+.modal_description{
+    width: 244px;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    line-height: 140%;
+   
+}
+.modal_success{
+    width: 140px;
+    height: 140px;
+    margin-left: 25%;
+}
+.modal_input_group{
+    flex-direction: column;
+    height: 110px;
+    width: 240px;
+}
+.modal_close{
+    left: 240px;
+    top: 28px;
+    width: 18px;
+    height: 18px;
+}
+.modal_message{
+    margin-top: 10px;
+    width: 200px;
+}
+
+.modal_mandatory{
+    width: 220px;
+    height: 48px;
+}
+.modal_title{
+    width: 220px;
+    height: 42px;
+    font-size: 15px;
+    line-height: 140%;
+}
 .about_service_link{
     font-weight: 600;
     font-size: 15px;
