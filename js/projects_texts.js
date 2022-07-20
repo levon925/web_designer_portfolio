@@ -57,7 +57,7 @@ function socialHeaderButtons(){
 
 function changeText() {
     const width = document.body.clientWidth;
-    console.log(width);
+    // console.log(width);
     const mura = document.querySelector('.mura_description'),
     nestle = document.querySelector('.nestle_description'),
     eltrendy = document.querySelector('.eltrendy_description'),
@@ -268,7 +268,7 @@ function changeText() {
             //removeProjectButtons();
         const projectsColumn = projectsCols[0].querySelector('.projects_column');
         
-        console.log(projectsColumn);
+        // console.log(projectsColumn);
               projectsColumn.innerHTML = projects[0] + projects[3] + projects[1] + projects[4] + projects[2] + projects[5];
               elementAnimation();
               
@@ -373,7 +373,7 @@ function addProjectButtons(){
 function resetProjectList(){
     const projectList = document.querySelector('.projects_cols');
     projectList.innerHTML = "";
-    console.log('reset');
+    // console.log('reset');
     
     
     
@@ -541,29 +541,29 @@ function step(){
             // plus.classList.toggle('stbtnhvr');
             plus.classList.toggle('stbtnactv');
             descr.classList.toggle('st');
-            console.log('click');
+            // console.log('click');
             if (e.classList.contains('ss1')){
-                console.log('11111');
+                // console.log('11111');
                 e.classList.toggle('step_size_1')
                 stepContent.classList.toggle('step_text_size_1')
             } else if (e.classList.contains('ss2')){
-                console.log('22222');
+                // console.log('22222');
                 e.classList.toggle('step_size_2')
                 stepContent.classList.toggle('step_text_size_2')
             } else if (e.classList.contains('ss3')){
-                console.log('33333');
+                // console.log('33333');
                 e.classList.toggle('step_size_3')
                 stepContent.classList.toggle('step_text_size_3')
             } else if (e.classList.contains('ss4')){
-                console.log('44444');
+                // console.log('44444');
                 e.classList.toggle('step_size_4')
                 stepContent.classList.toggle('step_text_size_4')
             } else if(e.classList.contains('ss5')){
-                console.log('55555');
+                // console.log('55555');
                 e.classList.toggle('step_size_5')
                 stepContent.classList.toggle('step_text_size_5')
             } else if(e.classList.contains('ss6')){
-                console.log('66666');
+                // console.log('66666');
                 e.classList.toggle('step_size_6')
                 stepContent.classList.toggle('step_text_size_6')
             }
@@ -580,11 +580,11 @@ function emailMe(){
 
           emailMeMove.style.display = "none";
     footer.addEventListener('mouseenter', () => {
-        console.log('footer mouseenter');
+        // console.log('footer mouseenter');
         emailMe.style.opacity = "0";
     });
     footer.addEventListener('mouseleave', () => {
-        console.log('footer mouseout');
+        // console.log('footer mouseout');
         emailMe.style.opacity = "1";
         emailMeMove.style.display = "none";
     });
@@ -597,29 +597,29 @@ function emailMe(){
               z = html.offsetHeight - footer.offsetHeight - 70,
               
               zero = z - emailMeMove.style.top.replace(/[^0-9,\.]/g,"");
-              console.log(html.offsetHeight);
-            console.log(emailMeMove.style.top,footer.offsetHeight,z);
-            console.log(z - emailMeMove.style.top.replace(/[^0-9,\.]/g,""));
-            console.log(html.offsetHeight - z, zero);
+            //   console.log(html.offsetHeight);
+            // console.log(emailMeMove.style.top,footer.offsetHeight,z);
+            // console.log(z - emailMeMove.style.top.replace(/[^0-9,\.]/g,""));
+            // console.log(html.offsetHeight - z, zero);
             
             emailMeMove.style.left = x - emailMeMove.offsetWidth/2 + "px";
             emailMeMove.style.top = y - emailMeMove.offsetHeight/1.08 + "px";
             
                 if(zero <= 0){
-                    console.log("<=0");
+                    // console.log("<=0");
                     // emailMeMove = document.createElement("div");
                     // emailMeMove.classList.add("email_me_move");
                     emailMeMove.style.display = "flex";
                     if(!(emailMeMove.innerHTML="")){
-                        console.log("a");
+                        // console.log("a");
                     }
                     emailMeMove.outerHTML = `<div class="email_me_move">email me</div>`;
-                    console.log(emailMeMove,emailMeMove.outerHTML);
+                    // console.log(emailMeMove,emailMeMove.outerHTML);
                     
                     
                 }
                 else{
-                    console.log(">0");
+                    // console.log(">0");
                     emailMeMove.style.display = "none";
                     // emailMeMove.remove();
                     emailMeMove.outerHTML="";
@@ -647,11 +647,11 @@ function emailMe(){
     // });
     emailMove.addEventListener('mouseenter',() => {
         emailMe.style.opacity = "1";
-        console.log('email mouseenter');
+        // console.log('email mouseenter');
     });
     emailMove.addEventListener('mouseleave',() => {
         emailMe.style.opacity = "0";
-        console.log('email mouseout');
+        // console.log('email mouseout');
     });
     
     
@@ -677,7 +677,7 @@ function projectLinks() {
 
 function projectBtns(x,y) {
     const project = document.querySelector(x);
-    console.log(project);
+    // console.log(project);
     project.addEventListener('click',() => window.open(y));
 }
 
@@ -738,9 +738,9 @@ function modalClose(text){
                 }
             
 
-            console.log(website);
+            // console.log(website);
             fixedOverlay.classList.remove('dn');
-            console.log('a');
+            // console.log('a');
             
         })
     })
@@ -773,7 +773,7 @@ function sendToMail(){
 
     btn[0].addEventListener('click', (e) => {
         e.preventDefault();
-        console.log(name.value, email.value, message.value);
+        // console.log(name.value, email.value, message.value);
         btn[0].value = 'Sending...';
 
         // const serviceID = 'web_designer';
