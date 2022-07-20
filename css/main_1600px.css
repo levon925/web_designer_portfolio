@@ -89,33 +89,109 @@ main {
 .process_steps {
     width: 750px;
 }
+
+
+
+/*steps*/
+
+
 .step{
     width: 750px;
-    
+    height: 102px;
+    transition: all .5s;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
 }
-.step_description{
-    margin-top: -15px;
-    margin-bottom: 30px;
-    margin-left: 89px;
-    width: 530px;
-    font-size: 16px;
-    line-height: 140%;
+.step_content{
+    width: 750px;
+    padding: 30px 0;
+    height: 42px;
+    transition: all .5s;
 }
-
-.step img{
-    width: 35px;
-    height: 35px;
-    margin: 34.5px 0;
-    
+.step_title{
+    display: flex;
 }
-
+.step_visible{
+    display: flex;
+    width: 750px;
+}
+.step_button{
+    margin-left: auto;
+}
 .step_title p{
+    margin: 0;
+    margin-right: 40px;
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 400;
     font-size: 30px;
     line-height: 140%;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
-.step_number {
-    margin-right: 40px;
+.step_unvisible{
+    text-transform: none;
+    margin-top: 15px;
+    margin-bottom: 0;
+    margin-left: 94px;
+    width: 530px;
+    font-family: 'Plain';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #C9C9C9;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    height: 0;
 }
+.step_size_1{
+    height: 205px;
+}
+.step_text_size_1{
+    height: 145px; 
+}
+.step_size_2{
+    height: 249px;
+}
+.step_text_size_2{
+    height: 189px;
+}
+.step_size_3{
+    height: 249px;
+}
+.step_text_size_3{
+    height: 189px;
+}
+.step_size_4{
+    height: 205px;
+}
+.step_text_size_4{
+    height: 145px;
+}
+.step_size_5{
+    height: 138px;
+}
+.step_text_size_5{
+    height: 78px;
+}
+.step_size_6{
+    height: 162px;
+}
+.step_text_size_6{
+    height: 102px;
+}
+.st{
+    height: 100%;
+}
+/*!steps*/
+
+
+.margin0{
+    margin: 0;
+    transition: 0s;
+}
+
 .projects{
     margin: 220px 0;
 }

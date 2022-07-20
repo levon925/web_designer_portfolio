@@ -73,7 +73,14 @@ function changeText() {
     //headerIcons.innerHTML= "<img class='social behance_link cursor_pointer' src='img/header/behance.svg' alt='behance'><img class='social_down instagram_link cursor_pointer' src='img/header/instagram.svg' alt='instagram'><img class='social facebook_link cursor_pointer' src='img/header/facebook.svg' alt='facebook'>";
         //concept.textContent = "first concept ";
     if(width < 1583 && width >= 983){
-        
+
+
+        builtBy();
+        elementAnimation();
+        sendToMail();
+        socialHeaderButtons();
+
+        step();
         modalClose('Leave a request for<br>');
         resetProjectList();
         removeProjectButtons();
@@ -94,7 +101,15 @@ function changeText() {
         imageChange(1000);
  
     } else if(width < 983 && width >= 623) {
-        
+
+
+        builtBy();
+        elementAnimation();
+        sendToMail();
+        socialHeaderButtons();
+
+
+        step();
         modalClose('Leave a request for<br>');
         resetProjectList();
         removeProjectButtons();
@@ -114,7 +129,13 @@ function changeText() {
         //headerIcons.innerHTML= "<img class='social behance_link cursor_pointer' src='img/header/behance.svg' alt='behance'><img class='social_down instagram_link cursor_pointer' src='img/header/instagram.svg' alt='instagram'><img class='social facebook_link cursor_pointer' src='img/header/facebook.svg' alt='facebook'>";
         concept.textContent = "first concept ";
     } else if(width < 623 && width >= 0) {
-        
+
+        builtBy();
+        elementAnimation();
+        sendToMail();
+        socialHeaderButtons();
+
+        step();
         modalClose('Request for');
         imageChange(320);
         removeProjectButtons();
@@ -291,7 +312,14 @@ function changeText() {
         concept.textContent = "concept ";
     }
     else {
-        
+
+
+        builtBy();
+        elementAnimation();
+        sendToMail();
+        socialHeaderButtons();
+
+        step();
         resetProjectList();
         imageChange(1600);
         addProjectButtons();
@@ -477,27 +505,70 @@ elementAnimation();
 }
 
 
-function stepList(){
-    const stepButton = document.querySelectorAll('.step');
-    stepButton.forEach(e =>{
-        const stepImage = e.querySelectorAll('img');
-        const stepDescription = e.querySelector('.step_description');
-        stepDescription.classList.add('opacity0');
-        stepImage.forEach(e =>{
-            e.addEventListener('click', () => {
-                stepDescription.classList.toggle('dn');
-                stepDescription.classList.toggle('opacity0');
-                stepDescription.classList.toggle('opacity1');
-                stepImage.forEach(e => {
-                    e.classList.toggle('dn');
-                });
-            });
-        });
-        // stepImage.addEventListener('click',()=>{
-        //     stepDescription.classList.toggle('dn');
+// function stepList(){
+//     const stepButton = document.querySelectorAll('.step');
+//     stepButton.forEach(e =>{
+//         const stepImage = e.querySelectorAll('img');
+//         const stepDescription = e.querySelector('.step_description');
+//         //stepDescription.classList.add('opacity0');
+//         stepImage.forEach(e =>{
+//             e.addEventListener('click', () => {
+//                 stepDescription.classList.toggle('margin0');
+//                  stepDescription.classList.toggle('st');
+//                 // stepDescription.classList.toggle('opacity1');
+//                 stepImage.forEach(e => {
+//                     e.classList.toggle('dn');
+//                 });
+//             });
+//         });
+//         // stepImage.addEventListener('click',()=>{
+//         //     stepDescription.classList.toggle('dn');
 
-        // });
-    });
+//         // });
+//     });
+// }
+function step(){
+    const step = document.querySelectorAll('.step');
+
+    step.forEach(e => {
+        const plus = e.querySelector('.step_button');
+        const descr = e.querySelector('.step_unvisible');
+        const stepContent = e.querySelector('.step_content');
+        plus.classList.add('stbtn');
+        // plus.classList.add('stbtnhvr');
+        plus.addEventListener('click', () => {
+            plus.classList.toggle('stbtn');
+            // plus.classList.toggle('stbtnhvr');
+            plus.classList.toggle('stbtnactv');
+            descr.classList.toggle('st');
+            console.log('click');
+            if (e.classList.contains('ss1')){
+                console.log('11111');
+                e.classList.toggle('step_size_1')
+                stepContent.classList.toggle('step_text_size_1')
+            } else if (e.classList.contains('ss2')){
+                console.log('22222');
+                e.classList.toggle('step_size_2')
+                stepContent.classList.toggle('step_text_size_2')
+            } else if (e.classList.contains('ss3')){
+                console.log('33333');
+                e.classList.toggle('step_size_3')
+                stepContent.classList.toggle('step_text_size_3')
+            } else if (e.classList.contains('ss4')){
+                console.log('44444');
+                e.classList.toggle('step_size_4')
+                stepContent.classList.toggle('step_text_size_4')
+            } else if(e.classList.contains('ss5')){
+                console.log('55555');
+                e.classList.toggle('step_size_5')
+                stepContent.classList.toggle('step_text_size_5')
+            } else if(e.classList.contains('ss6')){
+                console.log('66666');
+                e.classList.toggle('step_size_6')
+                stepContent.classList.toggle('step_text_size_6')
+            }
+        });
+    })
 }
 
 function emailMe(){
@@ -778,11 +849,7 @@ function builtBy() {
     });
 }
 
-builtBy();
 
-elementAnimation();
-sendToMail();
-socialHeaderButtons();
 
 
 
@@ -791,5 +858,5 @@ socialHeaderButtons();
 
 
 //emailMe();
-stepList();
+// stepList();
 

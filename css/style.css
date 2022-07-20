@@ -39,7 +39,7 @@
 
 
 .plus:hover{
-    transform: rotate(90deg);
+    transform: rotate(45deg);
     /* transition-property: transform; */
     /* transition-duration: 500ms; */
 }
@@ -202,7 +202,10 @@
 
 
 
-
+.margin0{
+    margin: 0;
+    transition: 0s;
+}
 
 
 body {
@@ -222,6 +225,7 @@ a{
 }
 .dn{
     display: none;
+    margin: 0;
 }
 p{
     font-family: "Monument Extended";
@@ -294,33 +298,127 @@ main{
 .process_title {
     margin: 0;
 }
-.step {
-    border-top: 1px solid white;
+
+/*steps*/
+
+
+.step{
+    width: 750px;
+    height: 102px;
+    transition: all .5s;
     border-bottom: 1px solid white;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    
-    
+    border-top: 1px solid white;
 }
-.step_button{
-    display: flex;
-    justify-content: space-between;
+.step_content{
+    width: 750px;
+    padding: 30px 0;
+    height: 42px;
+    transition: all .5s;
 }
 .step_title{
     display: flex;
 }
-.step_description{
+.step_visible{
+    display: flex;
+    width: 750px;
+}
+.step_button{
+    margin-left: auto;
+    /* transition-property: all;
+     transition: all 0.3s linear; */
+}
+.stbtn{
+    transition-property: all;
+    transition: all 0.3s linear;
+}
+/* .stbtnhvr{ */
+    /* transform: rotate(90deg);
+    transition: all 0.3s linear;
+} */
+.stbtnactv{
+    transform: rotate(45deg);
+    transition: 0.3s linear;
+}
+/* .step_button:hover{
+    transform: rotate(90deg);
+    transition: all 0.3s linear;
+}
+.step_button:active{
+    transform: rotate(45deg);
+    transition: all 0.3s linear;
+} */
+/* .step_button:hover::before{
+    transform: rotate(90deg);
+    transition: all 1s linear;
+} */
+.step_title p{
+    margin: 0;
+    margin-right: 40px;
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.step_unvisible{
+    text-transform: none;
+    margin-top: 15px;
+    margin-bottom: 0;
+    margin-left: 94px;
+    width: 530px;
     font-family: 'Plain';
     font-style: normal;
     font-weight: 400;
-    text-transform: none;
+    font-size: 16px;
+    line-height: 140%;
     color: #C9C9C9;
-    
-    display: flex;
     overflow: hidden;
-    
+    transition: 0.5s ease-in-out;
+    height: 0;
 }
+.step_size_1{
+    height: 205px;
+}
+.step_text_size_1{
+    height: 145px; 
+}
+.step_size_2{
+    height: 249px;
+}
+.step_text_size_2{
+    height: 189px;
+}
+.step_size_3{
+    height: 249px;
+}
+.step_text_size_3{
+    height: 189px;
+}
+.step_size_4{
+    height: 205px;
+}
+.step_text_size_4{
+    height: 145px;
+}
+.step_size_5{
+    height: 138px;
+}
+.step_text_size_5{
+    height: 78px;
+}
+.step_size_6{
+    height: 162px;
+}
+.step_text_size_6{
+    height: 102px;
+}
+.st{
+    height: 100%;
+}
+/*!steps*/
+
 
 .modal_success{
     width: 180px;
@@ -332,18 +430,20 @@ main{
   
 }
 
-.opacity0{
+.opaciuty0{
     max-height: 0;
     opacity: 0;
     transform: translate(0,-30%);
-    transition: 0.5s;
+    /*transition: 0.5s;*/
+    transition: all 5s ease-in;
     
 }
 .opacity1 {
-    
+    height: 100%;
     transition: opacity linear, height;
     transform: translate(0,0);
-    transition: 0.5s;
+    /*transition: 0.5s;*/
+    transition: all 5s ease-in;
     
     
     
