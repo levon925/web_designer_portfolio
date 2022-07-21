@@ -56,6 +56,7 @@ function socialHeaderButtons(){
 //hideButtons[1].remove();
 
 function changeText() {
+    // location.reload();
     const width = document.body.clientWidth;
     // console.log(width);
     const mura = document.querySelector('.mura_description'),
@@ -72,6 +73,23 @@ function changeText() {
     goldory.setAttribute('style', 'white-space: pre;');
     //headerIcons.innerHTML= "<img class='social behance_link cursor_pointer' src='img/header/behance.svg' alt='behance'><img class='social_down instagram_link cursor_pointer' src='img/header/instagram.svg' alt='instagram'><img class='social facebook_link cursor_pointer' src='img/header/facebook.svg' alt='facebook'>";
         //concept.textContent = "first concept ";
+        
+var oldWidth = window.innerWidth;
+
+window.onresize = function () {
+
+    var newWidth = window.innerWidth;
+
+    if (newWidth != oldWidth) {
+        location.reload();
+        // alert("width changed");
+
+        oldWidth = newWidth;
+
+    }
+
+};
+
     if(width < 1583 && width >= 983){
 
 
