@@ -74,7 +74,8 @@ function changeText() {
     //headerIcons.innerHTML= "<img class='social behance_link cursor_pointer' src='img/header/behance.svg' alt='behance'><img class='social_down instagram_link cursor_pointer' src='img/header/instagram.svg' alt='instagram'><img class='social facebook_link cursor_pointer' src='img/header/facebook.svg' alt='facebook'>";
         //concept.textContent = "first concept ";
         
-var oldWidth = window.innerWidth;
+function refreshOnResize(){
+    var oldWidth = window.innerWidth;
 
 window.onresize = function () {
 
@@ -89,6 +90,7 @@ window.onresize = function () {
     }
 
 };
+}
 
     if(width < 1583 && width >= 983){
 
@@ -98,6 +100,7 @@ window.onresize = function () {
         sendToMail();
         socialHeaderButtons();
 
+        refreshOnResize()
         step();
         modalClose('Leave a request for<br>');
         resetProjectList();
@@ -126,7 +129,7 @@ window.onresize = function () {
         sendToMail();
         socialHeaderButtons();
 
-
+        refreshOnResize()
         step();
         modalClose('Leave a request for<br>');
         resetProjectList();
@@ -152,6 +155,7 @@ window.onresize = function () {
         elementAnimation();
         sendToMail();
         socialHeaderButtons();
+
 
         step();
         modalClose('Request for');
@@ -337,6 +341,7 @@ window.onresize = function () {
         sendToMail();
         socialHeaderButtons();
 
+        refreshOnResize()
         step();
         resetProjectList();
         imageChange(1600);
