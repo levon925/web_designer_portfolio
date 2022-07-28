@@ -56,6 +56,7 @@ function socialHeaderButtons(){
 //hideButtons[1].remove();
 
 function changeText() {
+    console.log('Ширина: '+ screen.width,'Высота: ' + screen.height);
     // location.reload();
     const width = document.body.clientWidth;
     // console.log(width);
@@ -73,23 +74,22 @@ function changeText() {
     goldory.setAttribute('style', 'white-space: pre;');
     //headerIcons.innerHTML= "<img class='social behance_link cursor_pointer' src='img/header/behance.svg' alt='behance'><img class='social_down instagram_link cursor_pointer' src='img/header/instagram.svg' alt='instagram'><img class='social facebook_link cursor_pointer' src='img/header/facebook.svg' alt='facebook'>";
         //concept.textContent = "first concept ";
-        
 function refreshOnResize(){
-    var oldWidth = window.innerWidth;
-
-window.onresize = function () {
-
-    var newWidth = window.innerWidth;
-
-    if (newWidth != oldWidth) {
-        location.reload();
-        // alert("width changed");
-
-        oldWidth = newWidth;
-
-    }
-
-};
+            var oldWidth = window.innerWidth;
+        
+        window.onresize = function () {
+        
+            var newWidth = window.innerWidth;
+        
+            if (newWidth != oldWidth) {
+                location.reload();
+                // alert("width changed");
+        
+                oldWidth = newWidth;
+        
+            }
+        
+        };  
 }
 
     if(width < 1583 && width >= 983){
@@ -104,6 +104,7 @@ window.onresize = function () {
         step();
         modalClose('Leave a request for<br>');
         resetProjectList();
+        projectLinks();
         removeProjectButtons();
         const mura = document.querySelector('.mura_description'),
         nestle = document.querySelector('.nestle_description'),
@@ -133,6 +134,7 @@ window.onresize = function () {
         step();
         modalClose('Leave a request for<br>');
         resetProjectList();
+        projectLinks();
         removeProjectButtons();
         imageChange(640);
         const mura = document.querySelector('.mura_description'),
@@ -155,11 +157,12 @@ window.onresize = function () {
         elementAnimation();
         sendToMail();
         socialHeaderButtons();
-
+        
 
         step();
         modalClose('Request for');
         imageChange(320);
+        projectLinks();
         removeProjectButtons();
         const projects = [`<div class="project">
         <div class="project_content">
@@ -344,6 +347,7 @@ window.onresize = function () {
         refreshOnResize()
         step();
         resetProjectList();
+        projectLinks();
         imageChange(1600);
         addProjectButtons();
         modalClose('Leave a request for<br>');
@@ -523,7 +527,7 @@ function resetProjectList(){
     </div>
 </div>`;
 nestle = document.querySelector('.nestle_description');
-projectLinks();
+// projectLinks();
 elementAnimation();
 }
 
@@ -699,9 +703,12 @@ function projectLinks() {
 }
 
 function projectBtns(x,y) {
-    const project = document.querySelector(x);
+    const project = document.querySelectorAll(x);
     // console.log(project);
-    project.addEventListener('click',() => window.open(y));
+    project.forEach(e => {
+        e.addEventListener('click',() => window.open(y));
+    })
+    //project.addEventListener('click',() => window.open(y));
 }
 
 function modalClose(text){
@@ -882,4 +889,5 @@ function builtBy() {
 
 //emailMe();
 // stepList();
+projectLinks();
 
